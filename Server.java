@@ -77,6 +77,7 @@ class RWThread{
 		Thread writethread = new Thread() {
 			public void run(){
 				//This portion of code is to setup the connection between server and MQTT cloud
+                // Make sure you need to modify this part to suit your MQTT Cloud
 				String topic        = "GPS";
 				int qos             = 1;
 				String broker       = "tcp://m10.cloudmqtt.com:14062";

@@ -126,6 +126,7 @@ class SocketClient {
 public class Client {
 	public static void main(String[] args) throws IOException {
 		String ip = "localhost";
+        // Change the path directory in order to run this program correctly
 		String fileName = "/Users/David/Desktop/Computer Network/Assignment 1/gps";
 
 		SocketClient client1 = new SocketClient(ip,12345, fileName.concat(Integer.toString(0) + ".txt"));
