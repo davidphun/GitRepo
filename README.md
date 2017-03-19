@@ -23,8 +23,8 @@
 ## Android app
 - Create interface include 3 function :
 	+ Input bus id
-	+ Button (track bus id,)
-	+ TextView: show all information of bus ( bus id, longtitude ,attitude )
+	+ Button (track bus id)
+	+ TextView: show all information of bus ( bus id, longtitude , attitude, timestamp )
 - MainActivity.java:
 	+ Use mqtt import
 	+ Subscribe to mqtt by using client.subscribe() (line 83)
