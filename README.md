@@ -3,7 +3,7 @@ This program creates connections between clients and server using TCP protocol. 
 From then transport layer:
 - To demonstrate the realistic scienarioes, there would be a tons of clients. Therefore, to handle plenty of connections, multiple threads are needed in this program. More specifically, there are two kinds of threads.
 - ReadThread and WriteThread are included in both Client.java and Server.java which will be discussed below.
-======================================================================
+==============================================================================
 Client.java
 - class: SocketClient: Which is used to create an object can be acted as a client and numerous objects are also allowed
 	 		+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
