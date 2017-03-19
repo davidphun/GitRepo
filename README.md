@@ -19,7 +19,7 @@
 	+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
 	+ public void createWriteThread(): Create thread to send data to cloud server and wait for the ReadThread receives the new data to continue executing.
 - Class SocketThread:
-	+ public void createConn(): Create a connection for each client intend to connect the server.
+	+ public void createConn(): Create a connection for each client request to connect the server.
 ## Android app
 - Create interface include 3 function :
 	+ Input bus id
