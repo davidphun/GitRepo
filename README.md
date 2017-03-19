@@ -6,16 +6,16 @@ From then transport layer:
 =================================================================================
 Client.java
 - class: SocketClient: Which is used to create an object can be acted as a client and numerous objects are also allowed
-	 		+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
-	 		+ public void createWriteThread(): Create a thread to read data from censors (read from txt file in this case), send them to server when connected and sleep until the ReadThread notifies for the next transfer.
-			+ pbulic void createReadThread(): Create a thread to wait for response from the server after the data has been sent to the cloud and halt till the WriteThread has sent the data to Server.
+	 	+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
+	 	+ public void createWriteThread(): Create a thread to read data from censors (read from txt file in this case), send them to server when connected and sleep until the ReadThread notifies for the next transfer.
+		+ pbulic void createReadThread(): Create a thread to wait for response from the server after the data has been sent to the cloud and halt till the WriteThread has sent the data to Server.
 =================================================================================
 Server.java
 - class RWThread: Thread to read and write
-			+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
-			+ public void createWriteThread(): Create thread to send data to cloud server and wait for the ReadThread receives the new data to continue executing.
+		+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
+		+ public void createWriteThread(): Create thread to send data to cloud server and wait for the ReadThread receives the new data to continue executing.
 - class SocketThread:
-			+ public void createConn(): Create a connection for each client intend to connect the server.
+		+ public void createConn(): Create a connection for each client intend to connect the server.
 =================================================================================
 How to use:
 - Open the website CloudMQTT -> Control Panel -> Login -> Your CloudMQTT Instance(s) -> Details -> Websocket UI
