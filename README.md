@@ -1,4 +1,4 @@
-# GitRepo
+# Network Application
 ## Overview
 - This program creates connections between clients and server using TCP protocol. Clients send data to server then server read the data and send to cloud server using CloudMQTT server. Finally, our network application intendtion is to transfer the data from the cloud to an android application for analysis purposes.
 - From the transport layer:
