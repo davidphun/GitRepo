@@ -26,7 +26,7 @@
 	+ Button (track bus id)
 	+ TextView: show all information of bus ( bus id, longtitude , attitude, timestamp )
 - MainActivity.java:
-	+ Use mqtt import
+	+ Use MQTT import
 	+ Subscribe to mqtt by using client.subscribe() (line 83)
 	+ Create Input and Output using EditText and TextView by java android 
 	+ Set on click button when the button are clicked, it run client.setCallBack(new MqttCallback()) and run function If() to find correct bus id  
