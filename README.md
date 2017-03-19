@@ -17,7 +17,7 @@ From then transport layer:
 - Class SocketThread:
 	+ public void createConn(): Create a connection for each client intend to connect the server.
 =================================================================================
-How to use:
+### How to use:
 - Open the website CloudMQTT -> Control Panel -> Login -> Your CloudMQTT Instance(s) -> Details -> Websocket UI
 - Run the file Server.java and Client.java respectively.
 - You should see the data transfer from the program to CloudMQTT Console.
