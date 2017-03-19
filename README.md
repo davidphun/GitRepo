@@ -18,10 +18,10 @@ Server.java
 	+ public void createConn(): Create a connection for each client intend to connect the server.
 =================================================================================
 How to use:
-  - Open the website CloudMQTT -> Control Panel -> Login -> Your CloudMQTT Instance(s) -> Details -> Websocket UI
-  - Run the file Server.java and Client.java respectively.
-  - You should see the data transfer from the program to CloudMQTT Console.
-  - Note: After running the following steps, you should restart your CloudMQTT Console in order to prevent the Connection Lost for the new program execution. 
+- Open the website CloudMQTT -> Control Panel -> Login -> Your CloudMQTT Instance(s) -> Details -> Websocket UI
+- Run the file Server.java and Client.java respectively.
+- You should see the data transfer from the program to CloudMQTT Console.
+- Note: After running the following steps, you should restart your CloudMQTT Console in order to prevent the Connection Lost for the new program execution. 
 =================================================================================
 Android app
 - Create interface include 3 function :
