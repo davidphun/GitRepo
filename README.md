@@ -1,8 +1,8 @@
 # GitRepo
-- This program creates connections between clients and server using TCP protocol. Clients send data to server then server read the data and send to cloud server using MQTT protocol. (CloudMQTT server)
-From then transport layer:
-	+ To demonstrate the realistic scienarioes, there would be a tons of clients. Therefore, to handle plenty of connections, multiple threads are needed in this program. More specifically, there are two kinds of threads.
-	+ ReadThread and WriteThread are included in both Client.java and Server.java which will be discussed below.
+## Overview
+- This program creates connections between clients and server using TCP protocol. Clients send data to server then server read the data and send to cloud server using CloudMQTT server. Finally, our network application intendtion is to transfer the data from the cloud to an android application for analysis purposes.
+- From the transport layer:
+	+ To demonstrate the realistic scienarioes, there would be a tons of clients. Therefore, to handle plenty of connections, multiple threads are needed in this program. More specifically, there are two kinds of threads which are ReadThread and WriteThread are included in both Client.java and Server.java will be discussed later.
 ### Client.java
 - Class: SocketClient: Which is used to create an object can be acted as a client and numerous objects are also allowed
 	+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
