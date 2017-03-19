@@ -9,7 +9,7 @@ From then transport layer:
 	+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
 	+ public void createWriteThread(): Create a thread to read data from censors (read from txt file in this case), send them to server when connected and sleep until the ReadThread notifies for the next transfer.
 	+ public void createReadThread(): Create a thread to wait for response from the server after the data has been sent to the cloud and halt till the WriteThread has sent the data to Server.
-=================================================================================
+==============================================================================
 ### Server.java
 - Class RWThread: Thread to read and write
 	+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
