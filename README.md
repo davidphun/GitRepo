@@ -22,7 +22,7 @@ How to use:
   - Run the file Server.java and Client.java respectively.
   - You should see the data transfer from the program to CloudMQTT Console.
   - Note: After running the following steps, you should restart your CloudMQTT Console in order to prevent the Connection Lost for the new program execution. 
-==================================================================================
+=================================================================================
 Android app
 - Create interface include 3 function :
 	+ Input bus id
