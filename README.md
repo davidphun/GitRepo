@@ -12,10 +12,10 @@ Client.java
 =================================================================================
 Server.java
 - class RWThread: Thread to read and write
-	+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
-	+ public void createWriteThread(): Create thread to send data to cloud server and wait for the ReadThread receives the new data to continue executing.
+			+ public void createReadThread(): Create thread to read data from clients and wait until the WriteThread done its job.
+			+ public void createWriteThread(): Create thread to send data to cloud server and wait for the ReadThread receives the new data to continue executing.
 - class SocketThread:
-	+ public void createConn(): Create a connection for each client intend to connect the server.
+			+ public void createConn(): Create a connection for each client intend to connect the server.
 =================================================================================
 How to use:
 - Open the website CloudMQTT -> Control Panel -> Login -> Your CloudMQTT Instance(s) -> Details -> Websocket UI
