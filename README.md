@@ -5,7 +5,7 @@ From then transport layer:
 - ReadThread and WriteThread are included in both Client.java and Server.java which will be discussed below.
 =================================================================================
 ### Client.java
-- class: SocketClient: Which is used to create an object can be acted as a client and numerous objects are also allowed
+##### class: SocketClient: Which is used to create an object can be acted as a client and numerous objects are also allowed
 	+ public void createSocket(): Open socket in the client to connect and create two threads for transfering the data.
 	+ public void createWriteThread(): Create a thread to read data from censors (read from txt file in this case), send them to server when connected and sleep until the ReadThread notifies for the next transfer.
 	+ pbulic void createReadThread(): Create a thread to wait for response from the server after the data has been sent to the cloud and halt till the WriteThread has sent the data to Server.
