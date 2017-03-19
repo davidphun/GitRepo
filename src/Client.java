@@ -1,6 +1,5 @@
 import java.net.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.sql.Timestamp;
 import java.util.Scanner;
 import java.io.*;
 
@@ -94,7 +93,9 @@ class SocketClient {
 								//process each line
 								if(!is_sending){
 									String line = scanner.nextLine();
-									outStream.write(line.getBytes());
+                                    // Timestamp for GPS data
+                                    Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+									outStream.write((line + "," + timestamp).getBytes());
 									System.out.println(line + " is sending by thread " + Thread.currentThread().getId());
 									is_sending = true;
 									s.notify();
